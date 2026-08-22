@@ -10,70 +10,85 @@
 <body>
 
 <header>
-    <nav>
-        <a href="#inicio">Inicio</a>
-        <a href="#sobre-mi">Sobre mí</a>
-        <a href="#habilidades">Habilidades</a>
-        <a href="#proyectos">Proyectos</a>
-        <a href="#contacto">Contacto</a>
-    </nav>
+    <div class="header-contenido">
+        <a href="#inicio" class="logo">Mi Portafolio</a>
+        <nav>
+            <a href="#inicio">Inicio</a>
+            <a href="#sobre-mi">Sobre mí</a>
+            <a href="#habilidades">Habilidades</a>
+            <a href="#proyectos">Proyectos</a>
+            <a href="#contacto">Contacto</a>
+        </nav>
+    </div>
 </header>
 
 <main>
 
     <section id="inicio">
         <h1>Hola, soy Alex Hainover</h1>
-
-        <p>
-            Bienvenido a mi portafolio. Aquí encontrarás información sobre mí, mis habilidades y los proyectos en los que he trabajado.
+        <p class="inicio-subtitulo">
+            Desarrollador en formación, apasionado por la programación y la creación de proyectos digitales.
         </p>
+        <a href="#contacto" class="btn-contactame">¡Contáctame!</a>
     </section>
 
     <section id="sobre-mi">
         <h2>Sobre mí</h2>
 
-        <p>
-            Soy un desarrollador en formación, apasionado por la programación y la creación de proyectos digitales con un fin claro. Me interesa sobre todo cumplir un propósito real ya sea resolver un conflicto o mantener un entorno divertido y agradable manteniendo siempre mi propia esencia.
-        </p>
+        <div class="sobre-mi-contenido">
+            <!-- Círculo blanco por ahora (sin imagen) -->
+            <div class="foto-circulo"></div>
 
-        <p>
-            Mi forma de aprender se basa en su mayoría de experimentar y construir a partir de mis propios errores. Me gusta sentirme retado a la hora de solucionar algo obligándome a pensar fuera de la caja, investigar o incluso a buscar ayuda de otras personas.
-        </p>
-
-        <p>
-            Esto mismo también me hace muy de mente abierta a nuevas herramientas que mejoren mi propia productividad. Cada error y cada problema durante el desarrollo lo veo como una oportunidad genuina de entender como funcionan las cosas y a la vez mejorar mi lógica y razonamiento.
-        </p>
-
-        <p>
-            No pretendo solo aprender a usar la tecnología, mas bien me gusta entender que puedo construir con ella y hasta donde una idea puede volverse realidad. Me considero una persona curiosa, CREATIVA y bastante insistente cuando algo realmente me interesa.
-        </p>
-
-        <p>
-            Mi objetivo es y seguirá siendo crecer como un desarrollador y crear proyectos cada vez más completos, para que alguna o varias de mis ideas terminen convertidas en productos que realmente puedan ser utilizados por otras personas.
-        </p>
+            <div class="sobre-mi-texto">
+                <p>
+                    Soy un desarrollador en formación, apasionado por la programación y la creación de proyectos digitales con un fin claro. Me interesa sobre todo cumplir un propósito real ya sea resolver un conflicto o mantener un entorno divertido y agradable manteniendo siempre mi propia esencia.
+                </p>
+                <p>
+                    Mi forma de aprender se basa en su mayoría de experimentar y construir a partir de mis propios errores. Me gusta sentirme retado a la hora de solucionar algo obligándome a pensar fuera de la caja, investigar o incluso a buscar ayuda de otras personas.
+                </p>
+                <p>
+                    Esto mismo también me hace muy de mente abierta a nuevas herramientas que mejoren mi propia productividad. Cada error y cada problema durante el desarrollo lo veo como una oportunidad genuina de entender como funcionan las cosas y a la vez mejorar mi lógica y razonamiento.
+                </p>
+                <p>
+                    No pretendo solo aprender a usar la tecnología, mas bien me gusta entender que puedo construir con ella y hasta donde una idea puede volverse realidad. Me considero una persona curiosa, CREATIVA y bastante insistente cuando algo realmente me interesa.
+                </p>
+                <p>
+                    Mi objetivo es y seguirá siendo crecer como un desarrollador y crear proyectos cada vez más completos, para que alguna o varias de mis ideas terminen convertidas en productos que realmente puedan ser utilizados por otras personas.
+                </p>
+            </div>
+        </div>
     </section>
 
     <section id="habilidades">
         <h2>Habilidades</h2>
 
         <div class="habilidad">
-            <h3>HTML</h3>
+            <div class="habilidad-header">
+                <h3>HTML</h3>
+                <span class="porcentaje">80%</span>
+            </div>
             <div class="barra">
-                <div class="progreso" style="width: 80%;"></div>
+                <div class="progreso" data-porcentaje="80"></div>
             </div>
         </div>
 
         <div class="habilidad">
-            <h3>CSS</h3>
+            <div class="habilidad-header">
+                <h3>CSS</h3>
+                <span class="porcentaje">70%</span>
+            </div>
             <div class="barra">
-                <div class="progreso" style="width: 70%;"></div>
+                <div class="progreso" data-porcentaje="70"></div>
             </div>
         </div>
 
         <div class="habilidad">
-            <h3>JavaScript</h3>
+            <div class="habilidad-header">
+                <h3>JavaScript</h3>
+                <span class="porcentaje">50%</span>
+            </div>
             <div class="barra">
-                <div class="progreso" style="width: 50%;"></div>
+                <div class="progreso" data-porcentaje="50"></div>
             </div>
         </div>
     </section>
@@ -85,8 +100,6 @@
 
             <article class="proyecto">
                 <h3>NuwelTash</h3>
-
-                <!-- Preview de NuwelTash -->
                 <div class="preview-container">
                     <iframe 
                         src="https://nuweltash-phi.vercel.app/" 
@@ -96,37 +109,31 @@
                         sandbox="allow-scripts allow-same-origin"
                     ></iframe>
                 </div>
-
                 <p>
-                Estoy desarrollando NuwelTash, una plataforma que centraliza el proceso de estudio en un solo lugar: incluye la planificación y organización de recursos, hasta el seguimiento del progreso con apoyo de inteligencia artificial. Para más información, ingresa al proyecto.
+                    Estoy desarrollando NuwelTash, una plataforma que centraliza el proceso de estudio en un solo lugar: incluye la planificación y organización de recursos, hasta el seguimiento del progreso con apoyo de inteligencia artificial. Para más información, ingresa al proyecto.
                 </p>
-
-                <a href="https://nuweltash-phi.vercel.app/" target="_blank">
-                    Ver proyecto
-                </a>
+                <a href="https://nuweltash-phi.vercel.app/" target="_blank">Ver proyecto</a>
             </article>
 
             <article class="proyecto">
-                <h3>Próximamente</h3>
-
-                <!-- Placeholder mejorado sin imagen -->
-                <div class="preview-container placeholder">
-                    <div class="placeholder-content">
-                        <span class="placeholder-icon">🚀</span>
-                        <span class="placeholder-text">Próximamente</span>
-                        <span class="placeholder-subtext">Nuevo proyecto en desarrollo</span>
-                    </div>
+                <h3>DinoGame</h3>
+                <div class="preview-container">
+                    <iframe 
+                        src="https://dinogame-ten.vercel.app/" 
+                        class="preview-iframe"
+                        loading="lazy"
+                        title="Vista previa de DinoGame"
+                        sandbox="allow-scripts allow-same-origin"
+                    ></iframe>
                 </div>
-
                 <p>
-                    Estoy trabajando en nuevos proyectos que pronto estarán disponibles. Mantente atento a las actualizaciones.
+                    Una recreación del clásico juego del dinosaurio de Google, donde controlas a un T-Rex que debe saltar y esquivar obstáculos infinitos. Un proyecto divertido que pone a prueba reflejos y resistencia.
                 </p>
+                <a href="https://dinogame-ten.vercel.app" target="_blank">Ver proyecto</a>
             </article>
 
             <article class="proyecto">
                 <h3>Próximamente</h3>
-
-                <!-- Placeholder mejorado sin imagen -->
                 <div class="preview-container placeholder">
                     <div class="placeholder-content">
                         <span class="placeholder-icon">💡</span>
@@ -134,7 +141,6 @@
                         <span class="placeholder-subtext">Nueva idea en camino</span>
                     </div>
                 </div>
-
                 <p>
                     Estoy explorando nuevas ideas y tecnologías para crear proyectos innovadores. Pronto más información.
                 </p>
@@ -147,41 +153,42 @@
         <h2>Contacto</h2>
 
         <div class="informacion-contacto">
-
             <div>
                 <h3>Email</h3>
                 <p>alexhainover@gmail.com</p>
             </div>
-
             <div>
                 <h3>Teléfono</h3>
                 <p>+57 313 5004807</p>
             </div>
-
             <div>
                 <h3>Ubicación</h3>
                 <p>Cali, Colombia</p>
             </div>
-
         </div>
 
-        <form>
-            <div>
+        <form id="form-contacto" novalidate>
+            <div class="campo">
                 <label for="nombre">Nombre</label>
-                <input type="text" id="nombre" name="nombre">
+                <input type="text" id="nombre" name="nombre" placeholder="Tu nombre completo" autocomplete="name">
+                <span class="error-msg" id="error-nombre"></span>
             </div>
 
-            <div>
+            <div class="campo">
                 <label for="email">Email</label>
-                <input type="email" id="email" name="email">
+                <input type="email" id="email" name="email" placeholder="tu@email.com" autocomplete="email">
+                <span class="error-msg" id="error-email"></span>
             </div>
 
-            <div>
+            <div class="campo">
                 <label for="mensaje">Mensaje</label>
-                <textarea id="mensaje" name="mensaje"></textarea>
+                <textarea id="mensaje" name="mensaje" placeholder="Escribe tu mensaje aquí..." rows="5"></textarea>
+                <span class="error-msg" id="error-mensaje"></span>
+                <span class="contador" id="contador-mensaje">0 / 500</span>
             </div>
 
-            <button type="submit">Enviar mensaje</button>
+            <button type="submit" id="btn-enviar">Enviar mensaje</button>
+            <div id="mensaje-form" class="mensaje-form" hidden></div>
         </form>
     </section>
 
@@ -191,5 +198,7 @@
     <p>&copy; 2026 Alex Hainover. Todos los derechos reservados.</p>
 </footer>
 
+<script src="js/script.js"></script>
+
 </body>
-</html>   
+</html>
