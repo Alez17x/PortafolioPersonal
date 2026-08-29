@@ -1,6 +1,4 @@
-// =====================================================
-// ANIMACIÓN DE BARRAS + ENTRADA DE HABILIDADES (se repite al hacer scroll)
-// =====================================================
+// ANIMACIÓN DE BARR     + ENTRADA DE HABILIDADES (se repite al hacer scroll)
 document.addEventListener('DOMContentLoaded', function () {
     const habilidades = document.querySelectorAll('.habilidad');
 
@@ -38,9 +36,7 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 });
 
-// =====================================================
 // MENÚ HAMBURGUESA
-// =====================================================
 document.addEventListener('DOMContentLoaded', function () {
     const nav = document.querySelector('nav');
     const header = document.querySelector('header');
@@ -86,9 +82,7 @@ document.addEventListener('DOMContentLoaded', function () {
     handleResize();
 });
 
-// =====================================================
 // FORMULARIO: validación en tiempo real + DOM + events
-// =====================================================
 document.addEventListener('DOMContentLoaded', function () {
     const form = document.getElementById('form-contacto');
     if (!form) return;
@@ -109,7 +103,7 @@ document.addEventListener('DOMContentLoaded', function () {
     function validarNombre(valor) {
         const texto = valor.trim();
         if (texto === '') return 'El nombre es obligatorio.';
-        if (texto.length < 2) return 'El nombre debe tener al menos 2 caracteres.';
+        if (texto.length < 5) return 'El nombre debe tener al menos 5 caracteres.';
         if (!/^[a-zA-ZáéíóúÁÉÍÓÚñÑüÜ\s]+$/.test(texto)) {
             return 'El nombre solo puede contener letras y espacios.';
         }

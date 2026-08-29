@@ -35,7 +35,7 @@ section {
     padding: 80px 10%;
 }
 
-/* ========== HEADER ========== */
+/*  HEADER */
 header {
     background-color: #020617;
     padding: 0 10%;
@@ -82,7 +82,7 @@ nav a:hover {
     color: var(--color-principal);
 }
 
-/* ========== INICIO ========== */
+/*  INICIO */
 #inicio {
     min-height: auto;
     padding: 120px 10% 100px;
@@ -121,7 +121,7 @@ nav a:hover {
     background-color: #7dd3fc;
 }
 
-/* ========== SOBRE MÍ ========== */
+/*  SOBRE MÍ  */
 #sobre-mi {
     background-color: var(--color-superficie);
 }
@@ -161,7 +161,7 @@ nav a:hover {
     color: var(--color-texto-secundario);
 }
 
-/* ========== HABILIDADES ========== */
+/*  HABILIDADES  */
 #habilidades h2 {
     font-size: 2.5rem;
     margin-bottom: 40px;
@@ -215,7 +215,7 @@ nav a:hover {
     transition: width 1.4s ease;
 }
 
-/* ========== PROYECTOS ========== */
+/*  PROYECTOS  */
 #proyectos {
     background-color: var(--color-superficie);
 }
@@ -324,7 +324,7 @@ nav a:hover {
     transform: scale(1.05);
 }
 
-/* ========== CONTACTO ========== */
+/* CONTACTO  */
 #contacto h2 {
     font-size: 2.5rem;
     margin-bottom: 40px;
@@ -471,7 +471,7 @@ form button:hover {
     to   { opacity: 1; transform: translateY(0); }
 }
 
-/* ========== FOOTER ========== */
+/*  FOOTER  */
 footer {
     background-color: var(--color-superficie);
     padding: 25px 10%;
@@ -484,7 +484,7 @@ footer p {
     font-size: 0.9rem;
 }
 
-/* ========== MENÚ HAMBURGUESA ========== */
+/* MENÚ HAMBURGUESA */
 .hamburger-btn {
     display: none;
     background: none;
@@ -499,7 +499,7 @@ footer p {
     z-index: 1001;
 }
 
-/* ========== RESPONSIVE ========== */
+/* RESPONSIVE  */
 @media (max-width: 768px) {
     body {
         padding-top: 60px;
