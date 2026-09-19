@@ -146,6 +146,8 @@ nav a:hover {
     width: 320px;
     height: 320px;
     border-radius: 50%;
+    object-fit: cover;
+    display: block;
     background-color: #ffffff;
     border: 5px solid var(--color-principal);
     box-shadow: 0 0 0 8px rgba(56, 189, 248, 0.15);
